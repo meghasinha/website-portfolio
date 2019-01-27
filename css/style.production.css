@@ -1,102 +1,96 @@
-
-body
-{
+body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size:16px;
-  line-height:100%;
-
+  font-size: 16px;
 }
 
-header
-{
-  font-size:16px;
-  line-height:100%;
+header {
+  font-size: 16px;
+  line-height: 100%;
 }
 
-a
-{
-  color:#357b70;
-  font-style:normal;
+a {
+  color: #357b70;
+  font-style: normal;
 }
 
-a:visited
-{
+a:visited {
   /* visited link */
   color: #357b70;
 }
 
-a:hover, a:focus
-{
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
 }
 
-a:active
-{
+a:active {
   /* selected link */
   color: #e0b354;
 }
 
-button
-{
+#contact-email,
+#contact-number,
+#message {
+  width: 30%;
+  padding: 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
   /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
+  border: none;  /* takes the font from the outer container */
+  font-family: inherit;  /* styles the button */
   background-color: #357b70;
   color: white;
-  text-decoration: none;
-  /*adds spacing to the button; this will be discussed more in-depth later */
+  text-decoration: none;  /* adds spacing to the button; this will be discussed more in-depth later */
   padding: 10px;
-  border-radius: 3px;
-  /* width of the border, type, color */
+  border-radius: 3px;  /* width of the border, type, color */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus
-{
+button:hover,
+button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
+  cursor: pointer;  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
-.button_secondary
-{
+.button_secondary {
   background-color: #e0b354;
   color: #2b2b2b;
 }
 
-.navigation-list__item--active
-{
+.navigation-list__item--active {
   text-decoration: none;
 }
 
-.profile
-{
+.profile {
   max-width: 700px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
 }
 
-.profile_portfolio
-{
-  float:left;
-  width: 250px;
+.profile_portfolio {
+  max-width: 250px;
   margin-right: 40px;
   border-radius: 50%;
+  width: 100%;
+  height: 356px;
 }
 
-/* to bring footer in center*/
-.profile_footer
-{
+.profile_footer {
   clear: both;
-  text-align:center;
+  text-align: center;
 }
 
-.page-header
-{
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,67 +98,59 @@ button:hover, button:focus
   padding: 20px;
 }
 
-.page-header__item
-{
+.page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
-.page-header__item
-{
+.page-header__item {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
-/* setting the default width of all the element to include padding and border*/
-*
-{
+* { /* setting the default width of all the element to include padding and border */
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.navigation-list
-{
+.navigation-list {
   list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.navigation-list li
-{
-  display: inline-block;
+.navigation-list li {
+  margin-bottom: 10px;
   margin-left: 15px;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-
-  -webkit-transition-property:fonts-size background-color;
-
-  -o-transition-property:fonts-size background-color;
-
-  transition-property:fonts-size background-color;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: fonts-size background-color;
+  -o-transition-property: fonts-size background-color;
+  transition-property: fonts-size background-color;
+  -webkit-transition-delay: 0.5 s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   -webkit-transition-timing-function: ease-in;
-       -o-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-}
-.navigation-list li:hover
-{
-  background-color: #8FBC8F;
-  font-size:25px;
-
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
-.page-header img
-{
+.navigation-list li:hover {
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.page-header img {
   height: 60px;
 }
 
-.grid
-{
+.grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
@@ -172,15 +158,13 @@ button:hover, button:focus
   grid-gap: 20px;
 }
 
-.grid__item
-{
+.grid__item {
   background-color: lightgray;
-  padding:10px;
+  padding: 10px;
   width: auto;
 }
 
-.grid__item:last-child
-{
+.grid__item:last-child {
   -ms-grid-column: 3;
   grid-column: 3 / 3;
   -ms-grid-row: 1;
@@ -188,232 +172,213 @@ button:hover, button:focus
   grid-row: 1 / 3;
 }
 
-@media all and (max-width: 500px)
-{ .grid
-  {
+@media all and (max-width: 500px) {
+  .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
-  .grid__item:last-child
-  {
+
+  .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1
-  {
+
+  h1 {
     font-size: 24px;
   }
+
+  .profile {
+    flex-wrap: wrap;
+  }
+
+  .navigation-list {
+    flex-direction: column;
+  }
+
+  .navigation-list li:hover {
+    background-color: transparent;
+  }
 }
 
-@media all and (min-width:501px) & (max-width:700px)
-{
-  .grid
-  {
+@media all and (min-width: 501px) & (max-width: 700px) {
+  .grid {
     -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
-    grid-gap:10px;
+    grid-gap: 10px;
   }
-  .grid__item
-  {
+
+  .grid__item {
     grid-column: auto/auto;
-    grid-row:auto/auto;
+    grid-row: auto/auto;
   }
 }
 
-.about1
-{
+.about1 {
   width: 500px;
-  padding: $padding;
+  padding: 10px;
   margin: auto;
 }
 
-.cv
-{
+.cv {
   text-align: center;
-  margin: 50px 0px;
+  margin: 50px;
 }
 
-.contact
-{
+.contact {
   max-width: 700px;
   margin: 100px auto;
 }
 
-.button
-{
+.button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the button */
-  background-color: #357b70;
+  font-family: inherit;   /* takes the font from the outer container */
+  background-color: #357b70; /* styles the button */
   color: white;
   text-decoration: none;
-  padding:$padding;
+  padding: 10px;
   border-radius: 3px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* width of the border, type, color */
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-delay: .5s;
-       -o-transition-delay: .5s;
-          transition-delay: .5s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.5s;
+  -o-transition-delay: 0.5s;
+  transition-delay: 0.5s;
   -webkit-transition-property: font-size background-color;
   -o-transition-property: font-size background-color;
   transition-property: font-size background-color;
   -webkit-transition-timing-function: ease-in;
-       -o-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
 .button:hover,
-.button:focus
-{
-  background-color: #8FBC8F;
-  font-size:25px;
+.button:focus {
+  background-color: #8fbc8f;
+  font-size: 25px;
 }
-/*doing animation */
 
-@-webkit-keyframes color-change
-{
-  0%
-  {
-    fill: #6666ff;
+@-webkit-keyframes color-change { /* doing animation */
+  0% {
+    fill: #66f;
   }
-  50%
-  {
-    fill:  #0080ff;
+
+  50% {
+    fill: #0080ff;
   }
-  100%
-  {
+
+  100% {
     fill: #f76000;
   }
 }
 
-@keyframes color-change
-{
-  0%
-  {
-    fill: #6666ff;
+@keyframes color-change {
+  0% {
+    fill: #66f;
   }
-  50%
-  {
-    fill:  #0080ff;
+
+  50% {
+    fill: #0080ff;
   }
-  100%
-  {
+
+  100% {
     fill: #f76000;
   }
 }
 
-@-webkit-keyframes bg-color-change
-{
-  0%
-  {
+@-webkit-keyframes bg-color-change {
+  0% {
     fill: white;
   }
-  100%
-   {
-    fill: #FFFAFA;
+
+  100% {
+    fill: #fffafa;
   }
 }
 
-@keyframes bg-color-change
-{
-  0%
-  {
+@keyframes bg-color-change {
+  0% {
     fill: white;
   }
-  100%
-   {
-    fill: #FFFAFA;
+
+  100% {
+    fill: #fffafa;
   }
 }
 
-@-webkit-keyframes ganesha-move
-{
-  from
-  {
+@-webkit-keyframes ganesha-move {
+  from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
-  to
-  {
+
+  to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
-@keyframes ganesha-move
-{
-  from
-  {
+@keyframes ganesha-move {
+  from {
     -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
-  to
-  {
+
+  to {
     -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
 
-@-webkit-keyframes spin
-{
-  from
-  {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to
-  {
-    -webkit-transform:rotate(10deg);
-            transform:rotate(10deg);
+
+  to {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 }
 
-@keyframes spin
-{
-  from
-  {
-    -webkit-transform:rotate(0deg);
-            transform:rotate(0deg);
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
-  to
-  {
-    -webkit-transform:rotate(10deg);
-            transform:rotate(10deg);
+
+  to {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 }
 
-path#path20
- {
+path#path20 {
   -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation-duration: 8s;
   -webkit-animation-name: bg-color-change;
-          animation-name: bg-color-change;
+  animation-name: bg-color-change;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
-path#path22
-{
+path#path22 {
   -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  animation-duration: 6s;
   -webkit-animation-name: ganesha-move, spin, color-change;
-          animation-name: ganesha-move, spin, color-change;
+  animation-name: ganesha-move, spin, color-change;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
