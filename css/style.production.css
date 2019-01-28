@@ -215,9 +215,13 @@ button:focus {
 }
 
 .about1 {
-  width: 500px;
+  max-width: 500px;
   padding: 10px;
   margin: auto;
+}
+
+#ganesha svg {
+  width: 100%;
 }
 
 .cv {
