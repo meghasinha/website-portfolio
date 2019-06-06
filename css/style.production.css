@@ -220,6 +220,14 @@ button:focus {
   margin: auto;
 }
 
+{
+  padding-top: 10px;
+}
+
+.table {
+  padding-top: 10px;
+}
+
 #ganesha svg {
   width: 100%;
 }

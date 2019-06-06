@@ -145,14 +145,19 @@ button:hover, button:focus
 }
 .navigation-list li:hover
 {
-  background-color: #8FBC8F;
-  font-size:25px;
+  background-color: #8fbc8f;
+  font-size: 25px;
 
 }
 
 .page-header img
 {
   height: 60px;
+}
+
+.enjoy
+{
+  padding-top: 10px;
 }
 
 .grid
